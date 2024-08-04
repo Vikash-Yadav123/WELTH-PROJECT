@@ -1,0 +1,30 @@
+.hero-sec {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(213, 218, 231, 0.1),
+    rgba(184, 186, 191, 0.1)
+  );
+  position: relative;
+  padding: 0 5%;
+  overflow: hidden;
+
+  & .back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
